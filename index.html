@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprinter Book Asia - No. 1 Betting Site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #0f3057, #2a8eb7); /* Gradient background */
+            color: #fff;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .hero {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: #fff;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow */
+        }
+
+        .hero h2 {
+            font-size: 3rem; /* Larger font size */
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem; /* Larger font size */
+            margin-bottom: 2rem;
+        }
+
+        .button-container {
+            display: inline-block;
+        }
+
+        .cta-button {
+            background: #e74c3c;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+            display: inline-block;
+            position: relative;
+            margin-right: 10px; /* Space between buttons */
+        }
+
+        .cta-button:hover {
+            background: #c0392b;
+            box-shadow: 0 0 20px rgba(231, 76, 60, 0.7); /* Lighting effect */
+        }
+
+        .social-icons {
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .social-icons img {
+            width: 50px; /* Adjusted width */
+            height: 50px; /* Adjusted height */
+            margin-left: 5px;
+            transition: box-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        .social-icons img:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Lighting effect */
+        }
+
+        .features {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .features h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            color: #000;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Box shadow */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .feature:hover {
+            transform: translateY(-5px); /* Lift up on hover */
+        }
+
+        .feature h4 {
+            font-size: 1.8rem; /* Larger font size */
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Brand section styles */
+        .brand-section {
+            text-align: center;
+            margin: 4rem 0;
+            background-image: url('back.png'); /* Add your background image here */
+            background-size: cover;
+            background-position: center;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .brand-heading {
+            font-size: 3rem;
+            margin: 2rem 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Light effect */
+            color: #e74c3c;
+        }
+
+        .brand-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .brand-grid img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            background-color: black; /* Background color for images */
+            transition: box-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        .brand-grid img:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Lighting effect */
+        }
+
+        /* New section styles */
+        .notice {
+            background: #000; /* Black background */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            border-top: 1px solid #444; /* Optional border for separation */
+            margin-top: 2rem; /* Space from above content */
+            font-size: 0.9rem; /* Smaller font size for notice */
+        }
+
+        
+        .notice p {
+            margin: 0.5rem 0;
+        }
+ /* Video section styles */
+ .video-section {
+            background: #000; /* Black background */
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow */
+        }
+
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container video {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 450px; /* Adjust as needed */
+    border-radius: 10px;
+}
+
+        .video-button {
+            background: #e74c3c;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .video-button:hover {
+            background: #c0392b;
+            box-shadow: 0 0 20px rgba(231, 76, 60, 0.7); /* Lighting effect */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sprinter Book Asia</h1>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>No. 1 Betting Site in Asia</h2>
+            <p>Experience the thrill of betting with the best odds and a wide variety of games.</p>
+            <div class="button-container">
+                <a href="https://wa.me/918882366235" class="cta-button" target="_blank">Customer Support</a>
+                <a href="https://wa.me/918882366235" class="cta-button" target="_blank">Join Now</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://wa.me/918882366235" target="_blank"><img src="whats.png" alt="WhatsApp"></a>
+                <!-- <a href="https://www.instagram.com/sprinterbookasia/" target="_blank"><img src="insta.png" alt="Instagram"></a> -->
+                <a href="https://www.facebook.com/profile.php?id=61560002891394" target="_blank"><img src="face.png" alt="Facebook"></a>
+            </div>
+            <section class="brand-section">
+                <h3 class="brand-heading">Our Brands</h3>
+                <div class="brand-grid">
+                    <img src="brand1.png" alt="Brand 1" ondblclick="window.open('https://www.kingexchange.com', '_blank')">
+                    <img src="dhanbet.jpg" alt="Brand 2" ondblclick="window.open('https://www.dhanbet9.com', '_blank')">
+                    <img src="brand5.png" alt="Brand 5" ondblclick="window.open('https://www.jewel999.com', '_blank')">
+                    <img src="brand3.png" alt="Brand 3" ondblclick="window.open('https://www.lotusexch.com', '_blank')">
+                    <img src="brand4.png" alt="Brand 4" ondblclick="window.open('https://www.fairsport9.com', '_blank')">
+                    <img src="brand6.png" alt="Brand 6" ondblclick="window.open('https://www.dhanbet9.com', '_blank')">
+                </div>
+            </section>
+  
+        <section class="features">
+            <h3>Why Choose Us?</h3>
+            <div class="feature">
+                <h4>24-Hour Withdrawal</h4>
+                <p>Withdraw your winnings anytime, day or night.</p>
+            </div>
+            <div class="feature">
+                <h4>24-Hour Deposit</h4>
+                <p>Deposit funds into your account 24/7.</p>
+            </div>
+            <div class="feature">
+                <h4>1000+ Casino Games</h4>
+                <p>Now play Unstoppable with Sprinter.</p>
+            </div>
+            <div class="feature">
+                <h4>10% Bonus on Each Deposit</h4>
+                <p>Receive a 10% bonus every time you deposit.</p>
+            </div>
+            <div class="feature">
+                <h4>24/7 Customer Support</h4>
+                <p>We are here to help you round the clock.</p>
+            </div>
+            <div class="feature">
+                <h4>High Odds</h4>
+                <p>Enjoy the most competitive odds in the market.</p>
+            </div>
+            <div class="feature">
+                <h4>Secure and Trusted</h4>
+                <p>Bet with confidence, knowing your security is our priority.</p>
+            </div>
+        </section>
+        <!-- New Notice Section -->
+        <section class="notice">
+            <img src="18plus.png" alt="18+"> <!-- Replace with the actual path to your 18+ image -->
+            <p>All users must be 18 years or older to participate in betting activities.</p>
+            <p>Bet responsibly and ensure that you are following the laws of your jurisdiction.</p>
+            <p>For support and assistance, contact our 24/7 customer support team.</p>
+        </section>
+    <!-- New Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <video id="promoVideo" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <a href="javascript:void(0);" class="video-button" onclick="nextVideo()">Next Video</a>
+    </section>
+</main>
+<footer>
+    <p>&copy; Since 2017 Sprinter Book Asia. All rights reserved.</p>
+</footer>
+<script>
+    const videos = [
+        'v1.mp4',
+        'v9.mp4',
+        'v2.mp4',
+        'v3.mp4',
+        'v4.mp4',
+        'v5.mp4',
+        'v6.mp4',
+        'v7.mp4',
+        'v8.mp4'
+
+    ];
+    let currentVideoIndex = 0;
+
+    function nextVideo() {
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+        const videoElement = document.getElementById('promoVideo');
+        videoElement.src = videos[currentVideoIndex];
+        videoElement.play();
+    }
+</script>
+</body>
+</html>
